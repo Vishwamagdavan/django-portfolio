@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2" id="home-flex">
+            <div class="row">
+                <img src="{% static 'img/src.jpg' %}" class=" rounded img-responsive" alt="Vishwa Mahadevan"
+                    id="img-flex">
+            </div>
+            <div class="row-fluid">
+                <br>
+                <h1 style="color: white;">Vishwa Mahadevan</h1>
+                <p style="color: white;"><i>(விஷ்வா மகாதேவன்)</i></p>
+            </div>
+            <div class="row-fluid">
+                <p style="color: white;"><i>குறள் 375:<br><br>
+                        நல்லவை எல்லாஅந் தீயவாம் தீயவும்
+                        நல்லவாம் செல்வம் செயற்கு</i>.</p>
+                <br>
+                <!-- <p style="color: whitesmoke;"><i>
+                        All things that good appear will oft have ill success;
+                        All evil things prove good for gain of happiness.
+                    </i></p> -->
+            </div>
+            <div class="row" id="voidspace">
+
+            </div>
+            <div class="row-fluid" style="color: white;">
+                <a href="https://www.instagram.com/vishwa_mahadevan/" class="fa fa-instagram"></a>
+                <a href="https://github.com/Vishwamagdavan" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/vishwa-mahadevan-9b85b5144" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="col-md-9">
+           <div class="container-fluid">
+               <h2><h2 class="display-4">Works</h2></h2>
+           </div>
+           <div class="row">
+            {% for work in works %}
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ work.title }}</h5>
+                            <p class="card-text">{{ work.description }}</p>
+                            <a href="{% url 'work_details' work.pk %}"
+                               class="btn btn-primary">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+    </div>
+</div>
+
+{% endblock%}

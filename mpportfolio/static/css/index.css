@@ -1,0 +1,53 @@
+/* html {
+    font-family: 'Arima Madurai', cursive;
+  }
+  
+  body {
+    font-family: 'Arima Madurai', cursive;
+  }
+  
+  pre, code, kbd, samp {
+    font-family: monospace;
+  }
+  
+  input, button, select, optgroup, textarea {
+    font-family: inherit;
+  }
+  
+  .tooltip {
+    font-family: 'Arima Madurai', cursive;
+  }
+  
+  .popover {
+    font-family: 'Arima Madurai', cursive;
+  }
+  
+  .text-monospace {
+    font-family: monospace;
+  } */
+#home-flex
+{
+    height: 950px;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#img-flex
+{
+
+    width: 100%;
+
+}
+#voidspace
+{
+    padding-bottom: 20px;
+}
+.fa {
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  }

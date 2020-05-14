@@ -12,4 +12,4 @@ def work_details(request,pk):
     context={
         'works':works_list
     }
-    return render(request,'home/workdetail.html',context)
+    return render(request,'home/workdetails.html',context)

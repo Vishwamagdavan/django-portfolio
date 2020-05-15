@@ -37,7 +37,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <h3 class="display-2">Quotes</h3>
-                    <h4 class="display-4" style="font-family: 'Arima Madurai', cursive;">{{quote}}</h4>
+                    <blockquote class="blockquote text-center">
+                        <p class="display-4" style="font-family: 'Quicksand', sans-serif;">"{{quote}}"</p>
+                        <footer class="blockquote-footer"> <cite title="Source Title">{{author}}</cite></footer>
+                      </blockquote>
                 </div>
             </div>
             <div class="container-fluid">
@@ -65,5 +68,4 @@
     </div>
 </div>
 </div>
-
 {% endblock%}

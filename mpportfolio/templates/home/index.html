@@ -34,25 +34,34 @@
             </div>
         </div>
         <div class="col-md-9">
-           <div class="container-fluid">
-               <h2><h2 class="display-4">Works</h2></h2>
-           </div>
-           <div class="row">
-            {% for work in works %}
-                <div class="col-md-4">
-                    <div class="card mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ work.title }}</h5>
-                            <p class="card-text">{{ work.description }}</p>
-                            <a href="{% url 'work_details' work.pk %}"
-                               class="btn btn-primary">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <h3 class="display-2">Quotes</h3>
+                    <h4 class="display-4">{{quote}}</h4>
                 </div>
-                {% endfor %}
             </div>
+            <div class="container-fluid">
+                <h2 class="display-1">Works So Far!</h2>
+                    <br>
+                <div class="row">
+                    
+                    {% for work in works %}
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ work.title }}</h5>
+                                    <p class="card-text">{{ work.description }}</p>
+                                    <a href="{% url 'work_details' work.pk %}"
+                                       class="btn btn-primary">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>  
+            </div>
+
     </div>
 </div>
 </div>
